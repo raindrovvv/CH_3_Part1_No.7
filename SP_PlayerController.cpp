@@ -3,7 +3,15 @@
 #include "EnhancedInputSubsystems.h"
 
 ASP_PlayerController::ASP_PlayerController()
-:InputMappingContext(nullptr),MoveAction(nullptr), MoveForwardAction(nullptr), MoveRightAction(nullptr), LookAction(nullptr), JumpAction(nullptr)
+:	InputMappingContext(nullptr),
+	MoveAction(nullptr),
+	MoveForwardAction(nullptr),
+	MoveRightAction(nullptr),
+	LookAction(nullptr),
+	JumpAction(nullptr),
+	MoveUpAction(nullptr),
+	RotateRollAction(nullptr),
+	FlightHoldAction(nullptr)
 {
 }
 

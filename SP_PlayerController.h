@@ -1,5 +1,4 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -22,7 +21,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
 	UInputAction* MoveAction;
-	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
 	UInputAction* MoveForwardAction;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
@@ -33,7 +31,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
 	UInputAction* JumpAction;
 
-
+	// 드론 기능 추가
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
+	UInputAction* MoveUpAction;  // Space/Shift 상하 이동
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
+	UInputAction* RotateRollAction;  // Roll 회전 (마우스 휠 또는 키 입력)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
+	UInputAction* FlightHoldAction;  // Roll 회전 (마우스 휠 또는 키 입력)
 
 protected:
 	virtual void BeginPlay() override;
